@@ -1,5 +1,5 @@
 {
-  "name": "@3nvi/gatsby-plugin-intl",
+  "name": "@ivor/gatsby-plugin-intl",
   "private": false,
   "main": "index.js",
   "description": "A plugin to automatically generate localized versions of your pages with SEO support",
