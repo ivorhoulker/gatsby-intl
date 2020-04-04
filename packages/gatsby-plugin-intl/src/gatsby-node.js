@@ -24,10 +24,12 @@ export const onCreatePage = async (
   const originalPath = page.path;
   const is404 = originalPath.includes(notFoundPage);
 
+  if (page.context.qlang) return;
   // return early if page is exluded
   if (excludedPages.includes(originalPath)) {
     return;
   }
+  
 
   // Delete the original page (since we are gonna create localized versions of it) and add a
   // redirect header
